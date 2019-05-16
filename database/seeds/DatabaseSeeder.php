@@ -11,5 +11,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductsSeeder::class);
         $this->call(CouponCodesSeeder::class);
         $this->call(OrdersSeeder::class);
+        // 放在 ProductsSeeder 之前
+        $this->call(CategoriesSeeder::class);
+        $this->call(ProductsSeeder::class);
     }
 }
