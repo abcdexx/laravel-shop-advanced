@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Layout\Content;
+use Encore\Admin\Grid;
+use Encore\Admin\Form;
+use App\Models\Category;
 
 abstract class CommonProductsController extends Controller
 {
